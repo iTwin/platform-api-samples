@@ -1,4 +1,9 @@
 <#
+Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+See LICENSE.md in the project root for license terms and full copyright notice.
+#>
+
+<#
 
 This sample is a companion to a tutorial found on https://developer.bentley.com/, under the Administration API group.  
 It will demonstrate how to add users to a Project from a CSV file.
