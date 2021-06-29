@@ -1,4 +1,9 @@
 <#
+Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+See LICENSE.md in the project root for license terms and full copyright notice.
+#>
+
+<#
 
 Shared script for getting Project team members.  Used by other scripts to show pre- and post- states.
 
