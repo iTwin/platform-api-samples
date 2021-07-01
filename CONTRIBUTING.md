@@ -19,7 +19,7 @@ You need to have [Power Shell](https://docs.microsoft.com/en-us/powershell/scrip
 1. Go to sample directory. e.g. `cd Administration`.
 1. Run sample. e.g. `.\Get-ProjectMembers.ps1`.
 
-or if you use [vscode](https://code.visualstudio.com) you can run scripts using recommended extension in [extensions.json](./.vscode/extensions.json). Just go to power shell script file and just click run button.
+or if you use [VSCode](https://code.visualstudio.com) you can run scripts using recommended extension in [extensions.json](./.vscode/extensions.json). Just go to power shell script file and just click run button.
 
 ---
 
