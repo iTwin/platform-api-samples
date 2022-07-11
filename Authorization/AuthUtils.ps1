@@ -23,7 +23,7 @@ function New-AuthState {
 function New-UserLogin {
     param(
         [Parameter(Mandatory)][string]$ClientId,
-        [Parameter(Mandatory)][string]$redirectUri,
+        [Parameter()][string]$redirectUri = 'itwin-sample:oauth-redirect',
         [Parameter(Mandatory)][string]$Scopes,
         [Parameter(Mandatory)]$State
     )
@@ -36,6 +36,6 @@ function New-UserLogin {
     Write-Host "Login required.  Opening browser to faciliate user login." -ForegroundColor Green;
     Write-Host "You will need to allow the browser to access pwsh in order to login successfully." -ForegroundColor Green;
     Write-Host "Once you have logged in, this script will continue." -ForegroundColor Green;
-    $token = & $script -clientId $ClientId -scope $Scopes -redirectUri 'itwin-sample:oauth-redirect' -state $state -authorizationHostname 'ims.bentley.com';
+    $token = & $script -clientId $ClientId -scope $Scopes -redirectUri $redirectUri -state $state -authorizationHostname 'ims.bentley.com';
     return $token;
 }
