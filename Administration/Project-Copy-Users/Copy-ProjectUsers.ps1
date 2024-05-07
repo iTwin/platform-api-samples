@@ -46,7 +46,7 @@ param(
 
 
 <# 1. Request access token for use in Authorization header. #>
-$scopes = 'projects:read projects:modify';
+$scopes = 'itwin-platform';
 $state = New-AuthState -String ( $MyInvocation.MyCommand.Name + $env:computername );
 $token = New-UserLogin -ClientId $clientId -redirectUri $redirectUri -Scopes $scopes -State $state;
 if( [string]::IsNullOrEmpty($token) ) {
