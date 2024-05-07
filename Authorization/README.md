@@ -40,7 +40,5 @@ These samples require an Authorization Code + PKCE client.  Registration of a **
 
     ```Powershell
     $script = "$PSScriptRoot\..\Authorization\New-OidcAuthCodePkceLogin.ps1";
-    $access_token = & $script -clientId $clientId -scope 'projects:read' -redirectUri $redirectUri -state $state -authorizationHostname 'ims.bentley.com'
+    $access_token = & $script -clientId $clientId -scope 'itwin-platform' -redirectUri $redirectUri -state $state -authorizationHostname 'ims.bentley.com'
     ```
-
-
